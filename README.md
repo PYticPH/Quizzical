@@ -18,7 +18,7 @@ Quizzical is a lightweight, interactive quiz application built with React. It pr
 - **React** – UI library
 - **Vite** – Build tool and development server
 - **JavaScript (ES6+)** – Core logic
-- **CSS** – Styling (65% of the codebase)
+- **CSS** – Styling
 - **HTML** – Base structure
 
 ## Getting Started
