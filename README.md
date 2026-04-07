@@ -42,7 +42,7 @@ cd quizzical
 # Install dependencies
 npm install
 
-```bash
+bash
 npm run dev
 
 ```
