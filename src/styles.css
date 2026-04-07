@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Karla:wght@400;500&display=swap');
+
+body {
+  background: linear-gradient(45deg, rgba(137, 207, 240, .4) 0 5%, rgba(245, 247, 251, 1) 5% 90%, rgba(255, 240, 100, .4) 90% 100%);
+  color: #293264;
+  padding: 4em 1em;
+  display: flex;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+div#root {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 0;
+  padding: 1em;
+  max-width: 800px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid #DBDEF0;
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+
+legend {
+  font-size: 1.125rem;
+  margin-top: 1px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+label {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  font-size: 0.85rem;
+  border: 1px solid #4D5B9E;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  min-width: 50px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+label:has(input:checked) {
+
+  background: #D6DBF5;
+  color: #293264;
+}
+
+.submit {
+  background: #7582C0;
+  display: block;
+  margin: 4em auto 1em;
+  padding: .8em 2em;
+  border-radius: 12px;
+  border: 1px solid #4D5B9E;
+  font-size: .9rem;
+  color: #ffffff;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.submit:hover,
+.start:hover {
+  background: #4D5B9E;
+}
+
+.correct-ans,
+.wrong-ans {
+
+  border: none;
+}
+
+.correct-ans {
+
+  background: #94D7A2 !important;
+}
+
+.wrong-ans {
+
+  background: #F8BCBC !important;
+}
+
+label:has(input:disabled),
+input:disabled {
+  cursor: not-allowed;
+}
+
+label:has(input:disabled) {
+
+  border: 1px solid #4D5B9E;
+  color: #4D5B9E;
+  background: #F5F7FB;
+  opacity: 0.7;
+}
+
+.user-score {
+  margin-top: .5em;
+  color: #293264;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.loading {
+  color: #293264;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: 1.5s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #293264;
+  margin-bottom: 0.4em;
+}
+
+.small-text {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.start {
+  background: #7582C0;
+  display: block;
+  margin-top: 1em;
+  padding: .8em 4em;
+  border-radius: 12px;
+  border: 1px solid #4D5B9E;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: "inter", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
