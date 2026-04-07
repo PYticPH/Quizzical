@@ -42,8 +42,9 @@ cd quizzical
 # Install dependencies
 npm install
 
-```
-bash
+```bash
 npm run dev
+
 ```
+
 Open http://localhost:5173 to view it in your browser.
